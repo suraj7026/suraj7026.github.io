@@ -39,10 +39,17 @@ var slider = document.getElementById('slider2');
 var cards = slider.getElementsByTagName('li');
 
 var elementsToShow = 4;
+if (document.body.clientWidth < 1000) {
+    elementsToShow = 1;
+} else if (document.body.clientWidth < 1500) {
+    elementsToShow = 2;
+}
 var sliderContainerWidth = sliderContainer.clientWidth;
 var cardWidth = sliderContainerWidth / elementsToShow;
 
 slider.style.width = cards.length * cardWidth + 'px';
+slider.style.transition = 'margin';
+slider.style.transitionDuration = '500ms'
 
 for (let i = 0; i < cards.length; i++) {
     const element = cards[i];
