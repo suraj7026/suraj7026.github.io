@@ -225,143 +225,106 @@
 
     <section class="bg-white dark:bg-gradient-to-r from-violet-900 to-fuchsia-200 p-5 ">
 
+        <div class="py-10">
+            <h2 class="text-center text-3xl lg:text-5xl font-bold dark:text-white">
+                What we do...
+            </h2>
 
-        <div class="relativecontainer mx-auto">
-            <div class="py-16 lg:py-28">
-                <h2 class="text-center text-3xl lg:text-5xl font-bold dark:text-white">
-                    What We do...
-                </h2>
-                <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-                    <div class="w-full relative flex items-center justify-center">
-                        <button aria-label="slide backward"
-                            class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
-                            id="prev" onclick="goNext()">
-                            <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
+        </div>
 
-                        <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-                            <div id="slider"
-                                class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
-                                        class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+        <div class="flex py-bottom-10">
 
-                                        <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Product Development</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
-                                        class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+            <div class='w-2/12 flex items-center'>
+                <div class="w-full text-right">
+                    <button onclick=" prevCard() " type="button"
+                        class="bg-white p-3 rounded-full bg-opacity-80 mr-5 shadow-lg">
+                        <p class="hidden">p</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
 
-                                        <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Custom software development</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
-                                        class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                        <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Software maintenacne and support</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
-                                        class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                        <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Software Testing and Validation</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
-                                        class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                        <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Technology Consulting</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
-                                        class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                        <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Technical Training</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
-                                        class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                        <h2
-                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2
-                                        </h2>
-                                        <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Technical hiring Support</h3>
-                                        </div>
-                                    </div>
-                                </div>
+                        </svg>
 
-                                <button aria-label="slide forward"
-                                    class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
-                                    id="next" onclick="goNext()">
-                                    <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
-                </div>
-
-    </section>
-    <section class="bg-white dark:bg-gradient-to-r from-violet-900 to-fuchsia-200 p-5 ">
-        <div>
-            <div class="py-16 lg:py-28">
-                <h2 class="text-center text-3xl lg:text-5xl font-bold dark:text-white">
-                    What our Clients say...
-                </h2>
-
-                <div>
-
+                    </button>
                 </div>
             </div>
+            <div id="sliderCOntainer" class="w-10/12 overflow-hidden ">
+                <ul id="slider2" class="flex w-full trasnition-margin duration-700">
+                    <li class=" p-5">
+                        <div class="justify-text-center h-full border rounded-lg bg-white p-5">
+                            <img class="h-96 object-cover rounded-md w-full"
+                                src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="">
+                            <h3 class="text-xl p-2 lg:text-2xl font-semibold leading-5 lg:leading-6 text-black  ">
+                                Technical hiring Support</h3>
+                        </div>
+                    </li>
+                    <li class=" p-5">
+                        <div class="justify-text-center h-full border rounded-lg bg-white p-5">
+                            <img class="h-96 object-cover rounded-md w-full"
+                                src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="">
+                            <h3 class="text-xl p-2 lg:text-2xl font-semibold leading-5 lg:leading-6 text-black  ">
+                                Technical hiring Support</h3>
+                        </div>
+                    </li>
+                    <li class=" p-5">
+                        <div class="justify-text-center h-full border rounded-lg bg-white p-5">
+                            <img class="h-96 object-cover rounded-md w-full"
+                                src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="">
+                            <h3 class="text-xl p-2 lg:text-2xl font-semibold leading-5 lg:leading-6 text-black  ">
+                                Technical hiring Support</h3>
+                        </div>
+                    </li>
+                    <li class=" p-5">
+                        <div class="justify-text-center h-full border rounded-lg bg-white p-5">
+                            <img class="h-96 object-cover rounded-md w-full"
+                                src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="">
+                            <h3 class="text-xl p-2 lg:text-2xl font-semibold leading-5 lg:leading-6 text-black  ">
+                                Technical hiring Support</h3>
+                        </div>
+                    </li>
+                    <li class=" p-5">
+                        <div class="justify-text-center h-full border rounded-lg bg-white p-5">
+                            <img class="h-96 object-cover rounded-md w-full"
+                                src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="">
+                            <h3 class="text-xl p-2 lg:text-2xl font-semibold leading-5 lg:leading-6 text-black  ">
+                                Technical hiring Support</h3>
+                        </div>
+                    </li>
+                    <li class=" p-5">
+                        <div class="justify-text-center h-full border rounded-lg bg-white p-5">
+                            <img class="h-96 object-cover rounded-md w-full"
+                                src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="">
+                            <h3 class="text-xl p-2 lg:text-2xl font-semibold leading-5 lg:leading-6 text-black  ">
+                                Technical hiring Support</h3>
+                        </div>
+                    </li>
+                    <li class=" p-5">
+                        <div class="justify-text-center h-full border rounded-lg bg-white p-5">
+                            <img class="h-96 object-cover rounded-md w-full"
+                                src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="">
+                            <h3 class="text-xl p-2 lg:text-2xl font-semibold leading-5 lg:leading-6 text-black  ">
+                                Technical hiring Support</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-2/12 flex items-center">
+                <div class="w-full">
+                    <button onclick="nextCard()" class="bg-white p-3 rounded-full bg-opacity-80 ml-5 shadow-lg">
+                        <p class="hidden">p</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+            <script src="./main.js"></script>
         </div>
+
 
     </section>
 

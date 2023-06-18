@@ -34,18 +34,27 @@ function showSlide() {
     }
 
 }
+var sliderContainer = document.getElementById('sliderCOntainer');
+var slider = document.getElementById('slider2');
+var cards = slider.getElementsByTagName('li');
 
-let defaultTransform = 0;
-function goNext() {
-    defaultTransform = defaultTransform - 398;
-    var slider = document.getElementById("slider");
-    if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
-    slider.style.transform = "translateX(" + defaultTransform + "px)";
+var elementsToShow = 4;
+var sliderContainerWidth = sliderContainer.clientWidth;
+var cardWidth = sliderContainerWidth / elementsToShow;
+
+slider.style.width = cards.length * cardWidth + 'px';
+
+for (let i = 0; i < cards.length; i++) {
+    const element = cards[i];
+    element.style.width = cardWidth + 'px';
 }
 
-function goPrev() {
-    var slider = document.getElementById("slider");
-    if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-    else defaultTransform = defaultTransform + 398;
-    slider.style.transform = "translateX(" + defaultTransform + "px)";
+function prevCard() {
+    if (+slider.style.marginLeft.slice(0, -2) != -cardWidth * (cards.length - elementsToShow))
+        slider.style.marginLeft = (+slider.style.marginLeft.slice(0, -2)) - cardWidth + 'px';
+}
+function nextCard() {
+    if (+slider.style.marginLeft.slice(0, -2) != 0) {
+        slider.style.marginLeft = (+slider.style.marginLeft.slice(0, -2)) + cardWidth + 'px';
+    }
 }
